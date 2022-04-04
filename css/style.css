@@ -1,0 +1,409 @@
+/* Defaults */
+
+*{
+    padding:0;
+    margin:0;
+}
+
+:root {
+    --yellow : #fcae61;
+    --blue : #2500f9;
+    --text : #242f51;
+}
+
+.btn-custom {
+    background-color: var(--blue);
+    border-radius: 50px;
+    color:#fff; 
+    padding: 10px 20px;
+    transition: box-shadow .5s ,background .5s ;
+}
+
+.btn-custom:hover {
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 5px #00000087;
+}
+
+h2,h3,h4,h5,a,p{
+    color:var(--text);
+}
+
+.text-red {
+    color:#f55767!important;
+}
+
+.text-blue {
+    color:#2563ff!important;
+}
+
+.text-green {
+    color:#40975f!important;
+}
+
+.title h4 {
+    margin:20px 0;
+}
+
+/* Header Section*/
+
+header {
+    position:relative;
+}
+
+header .background {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    width: 100%;
+    overflow: hidden;
+}
+
+    /* Nav */
+nav .nav {
+    display:flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 20px;
+}
+
+.logo span {
+    color:var(--yellow);
+}
+
+nav .nav .content {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+}
+
+nav .nav .content ul {
+    margin-bottom: 0;
+}
+
+ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin:5px;
+    padding:0 20px;
+}
+
+nav .nav .content ul li a {
+    color:#000;
+}
+
+nav .nav .content ul li a:hover {
+    text-decoration:none;
+} 
+
+    /* Header content */
+
+header .content .text-area {
+    margin: 150px 20px;
+}
+
+header .content .text-area .mini-title p {
+    background-image: url('../images/Rectangle\ 2.png');
+    background-repeat: no-repeat;
+    height: 40px;
+    padding-top:5px;
+    padding-left: 50px;
+    position: relative;
+}
+
+header .content .text-area .mini-title p span {
+    background-image: url(../images/right-bg.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 40px;
+    height: 45px;
+    position: absolute;
+    left: 0px;
+    top: 0;
+}
+
+header .content .text-area .mini-title p span img {
+    transform: translate(10px,3px);
+}
+
+header .content .text-area .title h3 {
+    font-weight: bold;
+}
+
+header .content .text-area p {
+    color: #616368;
+}
+
+header .content .text-area .buttons {
+    margin-top: 30px;
+}
+
+/* Companies */
+
+.companies {
+    margin: 100px 0;
+}
+
+.companies .title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Features */
+
+.features .background {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+}
+
+.features .background img {
+    position:absolute;
+    width: 80%;
+    top:0;
+    left:0;
+}
+
+.features .background img[src="images/phone.2.png"] {
+    top:-14px;
+}
+
+.features .background img[src="images/phone-bg.png"] {
+    top:65px;
+}
+
+.features .feature  {
+    margin: 0px 10px 40px 10px;
+    display:flex;
+}
+
+.features .feature .photo {
+    margin-top:20px;
+}
+
+.features .feature .photo img {
+    width:80px;
+}
+
+.features .feature .disc {
+    margin-top: 20px;
+    margin-left:20px;
+}
+
+/* Text section */
+
+.text {
+    margin: 50px 0;
+}
+
+.text .title h3{
+    font-size: 2em;
+}
+
+.text .spt {
+    width:1px;
+    height: 100px;
+    background-color:#000;
+}
+
+.text .disc {
+    margin-left: 50px;
+}
+
+/* Services Section */
+
+.services .service .photo {
+    margin:20px 0;
+}
+
+/* Desined-by */
+.designed-by {
+    margin: 100px 0;
+}
+
+.designed-by .photo img {
+    width: 100%;
+}
+
+.designed-by .disc {
+    max-width: 400px;
+}
+
+.designed-by .disc h4 {
+    font-size: 2em;
+}
+
+/* Why Section */
+
+.why .service .photo {
+    margin:20px 0;
+}
+
+.why .title {
+    margin-bottom: 100px;
+}
+ 
+.why .row {
+    margin-bottom: 50px;
+}
+
+/* u-features Section */
+
+.u-features {
+    overflow: hidden;
+    margin:100px 0;
+}
+
+.u-features .content .row{
+    margin:30px 0;
+}
+
+.u-features .content .service {
+    margin:20px;
+}
+
+.u-features .content .service .photo {
+    margin-bottom: 20px;
+}
+
+/* Pricing */
+
+.pricing {
+    margin:50px 0;
+}
+
+.pricing .switch {
+    background-color:#f4f7f9;
+    border:1px solid #e0e0e0;
+    width: 190px;
+    border-radius: 50px;
+    margin: 50px auto;
+}
+
+.pricing .switch span {
+    cursor: pointer;
+}
+
+.pricing .price-card {
+    background-color:#f4f7f9;
+    text-align: center;
+    border-radius: 20px;
+    padding:30px;
+    max-width: 300px;
+    box-shadow: 0px 0px 5px #00000087;
+}
+
+.pricing .price-card .content {
+    background-color:#fff;
+    padding:10px;
+}
+
+.pricing .price-card .content span {
+    color:var(--blue);
+    margin-top : 10px;
+}
+
+.pricing .price-card ul li {
+    list-style-type:none;
+    margin:20px;
+}
+
+/* How-to */
+.how-to {
+    margin:130px 0;
+}
+.how-to .photo {
+    position: relative;
+    overflow: hidden;
+}
+.how-to .photo img {
+    position: absolute;
+    width:100%;
+    top:0;
+    left:0;
+}
+.how-to .photo img[src="images/p.bg.png"] {
+    width: 90%;
+}
+
+.how-to  .content .rating {
+    margin:20px 0;
+    color:#ffcc00;
+}
+.how-to .content .person {
+    display: flex;
+    margin-top:30px
+}
+.how-to .content .person .info {
+    margin-top:20px;
+    margin-left:20px;
+}
+
+/* faq section */
+
+.faq .content .question {
+    background-color:#f5f7fa;
+    padding:20px;
+    border-radius:20px;
+    margin:20px;
+    margin-top:40px;
+    position: relative;
+}
+
+.faq .content .question h5 ,.faq .content .question p{
+    margin:15px;
+}
+.faq .question svg {
+    cursor:pointer;
+    position: absolute;
+    right:0;
+    top:50%;
+    font-size: 1.8em;
+    transform: translate(-200%,-50%);
+    transition:transform .5s;
+}
+
+
+.faq .question svg:hover {
+    transform: translate(-200%,-50%) scale(1.2);
+}
+
+/* dnow section */
+.dnow {
+    margin-top:50px;
+}
+
+.dnow .title h4{
+    font-size: 2em;
+}
+
+/* Footer section */
+
+footer {
+    background-color:#09142e;
+    color:#fff;
+    text-align: center;
+    padding:50px;
+}
+
+footer div {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+footer div svg {
+    font-size: 2em!important;
+    margin:15px;
+}
+
+footer div ul li a {
+    color:#fff;
+}
+
+footer p {
+    margin:0;
+}
